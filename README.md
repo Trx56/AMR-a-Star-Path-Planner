@@ -1,4 +1,4 @@
-# 3D AMR Labyrinth Path Planning Simulation 🤖
+# 3D AMR Labyrinth Path Planning Simulation 
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-orange.svg)](https://numpy.org/)
@@ -9,7 +9,7 @@
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 * **A* Search Algorithm Integration:** Implements an 8-directional graph traversal algorithm leveraging Euclidean distance heuristics to compute the shortest, collision-free route across a discrete grid.
 * **3D Spatial Extrusion:** Transforms flat NumPy grid matrices into solid 3D warehouse walls and obstacles using Matplotlib's `bar3d` toolkit.
@@ -19,18 +19,18 @@
 
 ---
 
-## 🛠️ Tech Stack & Libraries
+## Tech Stack & Libraries
 * **Language:** Python
 * **Grid & Matrix Math:** NumPy
 * **Animation & Rendering:** Matplotlib (`mpl_toolkits.mplot3d`, `FuncAnimation`)
 
 ---
 
-## 📂 Code Architecture (`amr_planner.py`)
+##  Code Architecture (`amr_planner.py`)
 ```text
-📦 AMR-A-Star-Path-Planner
- ┣ 📜 amr_planner.py      # Core A* search algorithm, labyrinth layout, and 3D animator
- ┗ 📜 README.md           # Project documentation          Core Implementation Overview:
+ AMR-A-Star-Path-Planner
+ ┣  amr_planner.py      # Core A* search algorithm, labyrinth layout, and 3D animator
+ ┗  README.md           # Project documentation          Core Implementation Overview:
 
 1. Priority Queue Search (`astar_planner`): Evaluates neighboring nodes using total cost scoring ($f = g + h$), ensuring optimal path discovery while circumventing static obstacles.
 2. Dynamic Frame Rendering (`animate`): Updates robot coordinates across $(X, Y, Z)$ axes iteratively, generating smooth HTML5 video outputs suitable for Google Colab or local execution.
